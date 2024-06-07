@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@import url("./reset.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+:root{
+    --app-font-general:'Outfit', sans-serif;
+    --body-bg-colour: #1b1b24;
+    --card-bg-colour:#23232f;
+    --white-bg-colour:#fff;
+    --inputs-bg-colour:#2c2c3a;
+    --btn-bg-colour:#008b8b;
+
+}
+
+main{
+    height: 100dvh;
+}
+
+body{
+    background-color: var(--body-bg-colour);
+    font-family: var(--app-font-general);
+    color: var(--white-bg-colour);
+}
+
+.container{
+    width: min(100% - 30px,1080px);
+    margin-inline:auto;
+    height: 100%;
+
+}
+
+.flex{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+
+i {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 50px;
+    padding: 0 12px;
+    cursor: pointer;
+    color: #FFD43B;
+}
+
+.rating-text{
+    margin-top: 75px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 10px 10px;
+}
+
+section{
+    position: relative;
+    width: 470px;
+    height: 150px;
+}
+
+
+section div{
+    list-style-type: none;
+    padding: 10px 10px;
+    position: absolute;
+} 
+
+
+.show-dialog{
+    padding: 10px 20px;
+    font-size: 18px;
+    color: var(--white-bg-colour);
+    background-color: var(--btn-bg-colour);
+    border-radius: 5px;
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+}
+
+.dialog-box{
+    background-color: var(--card-bg-colour);
+    width: 470px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    transition: transform 1s;
+    border-radius: 20px;  
+    padding: 20px;
+
+    button{
+        margin-top: 20px;
+        font-size: 23px;
+        padding: 10px 30px;
+        text-transform: capitalize;
+        border-radius: 5px;
+        background-color: var(--btn-bg-colour);
+        color: var(--white-bg-colour);
+    }
+
+}
+
+.dialog-box p{
+    font-size: 23px;
+    color: var(--white-bg-colour);
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.visible{
+    visibility: visible;
+    transform: translate(-50%, -50%);    
+}
+
+.hidden{
+    visibility: hidden;
+}
