@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/star-app/static/css/main.2dbd50ee.css",
+    "main.js": "/star-app/static/js/main.4c214907.js",
+    "index.html": "/star-app/index.html",
+    "main.2dbd50ee.css.map": "/star-app/static/css/main.2dbd50ee.css.map",
+    "main.4c214907.js.map": "/star-app/static/js/main.4c214907.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2dbd50ee.css",
+    "static/js/main.4c214907.js"
+  ]
+}
